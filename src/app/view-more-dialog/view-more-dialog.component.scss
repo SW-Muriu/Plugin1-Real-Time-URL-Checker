@@ -1,0 +1,24 @@
+.key-value-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.key-value-list li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.key,
+.value {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.key {
+    font-weight: bold;
+}

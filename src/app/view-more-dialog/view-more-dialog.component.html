@@ -1,0 +1,25 @@
+<div mat-dialog-content>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title><strong>Link's Querry Params</strong></mat-card-title>
+            <!-- <mat-card-subtitle>The search querry contains the information:</mat-card-subtitle> -->
+        </mat-card-header>
+
+        <mat-card-content>
+            <ul class="key-value-list">
+                @if(this.indicateHide == true){
+                <p>No Querry Params Attached to this Path</p>
+                } @else {
+                @for (key of objectKeys; track $index) {
+                <span class="key">{{ key }}</span>
+                <span class="value">{{ dataNames[key] }}</span>
+                }
+                }
+            </ul>
+        </mat-card-content>
+        <mat-card-actions align="start">
+            <button mat-raised-button color="primary" (click)="dialogRef.close()">Close</button>
+
+        </mat-card-actions>
+    </mat-card>
+</div>
