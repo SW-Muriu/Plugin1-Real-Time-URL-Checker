@@ -28,9 +28,7 @@ export class ViewMoreDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<AppComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-  ) {
-
-  }
+  ) { }
 
   ngOnInit(): void {
     this.rawData = this.data.columns;
